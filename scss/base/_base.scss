@@ -1,0 +1,18 @@
+/* RESET BÁSICO */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $fuente-principal;
+  background-color: $fondo-principal;  // Cambié $blanco por $fondo-principal (gris claro)
+  color: $texto-principal;              // Cambié $negro (no definido) por $texto-principal
+  line-height: 1.6;
+}

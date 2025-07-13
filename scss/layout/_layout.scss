@@ -1,0 +1,13 @@
+/* Estilos para el footer */
+
+footer {
+  background-color: $azul-oscuro;
+  color: $blanco;
+  padding: 1.5rem 0;
+  text-align: center;
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}

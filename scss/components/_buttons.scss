@@ -1,0 +1,25 @@
+/* Estilos para botones personalizados */
+
+.btn-animado {
+  @extend .btn; // Extiende estilos básicos de Bootstrap para los botones
+  background-color: $azul-principal;
+  border: none;
+  color: $blanco;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+
+  // Mixin para transiciones y efectos hover
+  @include boton-animado;
+
+  &:hover,
+  &:focus {
+    background-color: darken($azul-principal, 10%);
+    text-decoration: none;
+    color: $blanco;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

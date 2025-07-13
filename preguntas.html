@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Preguntas frecuentes sobre suplementos, envíos y métodos de pago en Suplementos Villagran." />
+  <meta name="keywords" content="faq, preguntas frecuentes, suplementos, envíos, pagos, proteína, creatina, villagran" />
+  <meta name="author" content="Mauricio Villagran" />
+  <title>Preguntas Frecuentes | Suplementos Villagran</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- CSS Propio -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="bg-primary text-white py-3">
+    <div class="container">
+      <h1 class="h3 text-center mb-3">Suplementos Villagran</h1>
+      <!-- Navegación principal -->
+      <nav aria-label="Menú principal">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="preguntas.html">Preguntas Frecuentes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main-content" class="container my-5" tabindex="-1">
+    <h2 class="mb-4 text-center">Preguntas Frecuentes</h2>
+
+    <div class="accordion" id="faqAccordion" role="region" aria-live="polite">
+      
+      <!-- Pregunta 1 -->
+      <section class="accordion-item">
+        <h3 class="accordion-header" id="heading1">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse1"
+            aria-expanded="true"
+            aria-controls="collapse1"
+          >
+            ¿Qué suplementos son ideales para ganar masa muscular?
+          </button>
+        </h3>
+        <div
+          id="collapse1"
+          class="accordion-collapse collapse show"
+          aria-labelledby="heading1"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Recomendamos proteína de suero, creatina y BCAA como los más efectivos para la hipertrofia muscular.
+          </div>
+        </div>
+      </section>
+
+      <!-- Pregunta 2 -->
+      <section class="accordion-item">
+        <h3 class="accordion-header" id="heading2">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse2"
+            aria-expanded="false"
+            aria-controls="collapse2"
+          >
+            ¿Realizan envíos a todo el país?
+          </button>
+        </h3>
+        <div
+          id="collapse2"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading2"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Sí, realizamos envíos a todo el territorio argentino con correo certificado.
+          </div>
+        </div>
+      </section>
+
+      <!-- Pregunta 3 -->
+      <section class="accordion-item">
+        <h3 class="accordion-header" id="heading3">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapse3"
+            aria-expanded="false"
+            aria-controls="collapse3"
+          >
+            ¿Qué formas de pago aceptan?
+          </button>
+        </h3>
+        <div
+          id="collapse3"
+          class="accordion-collapse collapse"
+          aria-labelledby="heading3"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="accordion-body">
+            Aceptamos tarjetas de crédito, débito, MercadoPago y transferencias bancarias.
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Suplementos Villagran - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

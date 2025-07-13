@@ -1,0 +1,57 @@
+// MIXINS GENERALES
+
+// Mixin para aplicar una transición suave
+@mixin transicion-suave($propiedad: all, $duracion: 0.3s, $tipo: ease-in-out) {
+  transition: $propiedad $duracion $tipo;
+}
+
+// Mixin para centrar con Flexbox
+@mixin centrar-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin para tamaño responsivo
+@mixin responsivo($min) {
+  @media (max-width: $min) {
+    @content;
+  }
+}
+
+// Mixin para botón animado
+@mixin boton-animado {
+  @include transicion-suave;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Mixin para animación de fade-in
+@mixin fade-in($duracion: 0.6s, $retardo: 0s) {
+  opacity: 0;
+  animation: fadeInAnim $duracion ease forwards;
+  animation-delay: $retardo;
+}
+
+@keyframes fadeInAnim {
+  to {
+    opacity: 1;
+  }
+}
+
+// Mixin para animación de slide-up
+@mixin slide-up($duracion: 0.5s, $retardo: 0s) {
+  transform: translateY(10px);
+  opacity: 0;
+  animation: slideUpAnim $duracion ease forwards;
+  animation-delay: $retardo;
+}
+
+@keyframes slideUpAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
